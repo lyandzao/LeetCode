@@ -16,4 +16,4 @@ var twoSum = function(nums, target) {
     }
   }
 };
-twoSum([3, 2, 4], 6);
+
