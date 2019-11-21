@@ -33,4 +33,4 @@ var romanToInt = function(s) {
   }
 
   return result
-};
+}
