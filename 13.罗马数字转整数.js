@@ -1,4 +1,8 @@
-var romanToInt = function(stringNumber) {
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var romanToInt = function(s) {
   function romaMapToNumber(number) {
     switch (number) {
       case 'I':
@@ -19,7 +23,7 @@ var romanToInt = function(stringNumber) {
         break;
     }
   }
-  let stringNumberArray = [...stringNumber];
+  let stringNumberArray = [...s];
   let result = 0;
   for (let i = 0; i < stringNumberArray.length; i++) {
     romaMapToNumber(stringNumberArray[i]) <
@@ -30,4 +34,3 @@ var romanToInt = function(stringNumber) {
 
   return result
 };
-romanToInt('MCMXCIV');
