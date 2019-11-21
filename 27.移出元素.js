@@ -5,4 +5,4 @@
  */
 var removeElement = function(nums, val) {
   return nums.filter(x => x !== val).length;
-};
+}
