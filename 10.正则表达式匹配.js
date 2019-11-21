@@ -5,4 +5,4 @@
  */
 var isMatch = function(s, p) {
   return new RegExp(['^', ...p, '$'].join('')).test(s);
-};
+}
