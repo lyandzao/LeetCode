@@ -3,16 +3,10 @@
  * @return {number[]}
  */
 var plusOne = function(digits) {
-  let length;
   if (digits.length === 1) {
-    if (digits[0] === 9) {
-      return [1, 0];
-    } else {
-      return [digits[0]+1]
-    }
+    return digits[0] === 9 ? [1, 0] : [digits[0] + 1];
   } else {
-    length = digits.length - 1;
-    for (let i = length; i >=0; i--) {
+    for (let i = digits.length - 1; i >= 0; i--) {
       if (digits[i] === 9 && i > 0) {
         digits[i] = 0;
         continue;
