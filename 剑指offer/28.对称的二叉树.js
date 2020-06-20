@@ -10,7 +10,7 @@
  * @return {boolean}
  */
 var isSymmetric = function (root) {
- return root===null?true:traverse
+ return root===null?true:traverse(root.left,root.right)
 };
 
 function traverse(a, b) {
